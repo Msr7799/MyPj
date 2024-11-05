@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome To Maltilara</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-image: url('/assets/img/pattern.jpeg');
+        }
+        body, h1, h2, h3, h4, h5 {
+            font-family: "mqtt"; font-weight: 500;
+        }
+        .w3-third img {
+            margin-bottom: -6px;
+            opacity: 0.8;
+            cursor: pointer
+        }
+        .w3-third img:hover {
+            opacity: 1
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #7e6565;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+        button:hover, a:hover {
+            opacity: 0.7;
+        }
+        .comment-section {
+            margin-top: 10px;
+        }
+        .comment-input {
+            width: 80%;
+            padding: 8px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-collapse w3-animate-left" style="z-index:3;width:300px;background-color:#f7d9d9be; background-image: url('/assets/img/bg.jpg');" id="mySidebar"><br>
+        <div class="w3-container">
+            <img src="/assets/img/logo.svg" alt="logo" class="w3-round" style="width:250px"; > 
+        </div>
+        <div class="w3-bar-block">
+            <h3 class="w3-padding-64 w3-center">
+                <h2 style="font-family: Times New Roman, Times, serif; margin-left: 30px; color:#2a2e3ab8;">Welcome To</h2>
+                <h2 style="font-family: Times New Roman, Times, serif; margin-left: 30px;color:#2a2e3ab8;">Maltilara</h2>
+            </h3>
+            <br>
+            <button type="login"><a href="/auth/sign-in">Login</a></button>
+            <br>
+            <a href="/auth/sign-up"><button type="register">Register</button></a>
+            <br>
+            <br>
+            <br>
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+            <a href="#galary" onclick="w3_close()" class="w3-bar-item w3-button">GALARY</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+            <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-left:20px; text-align:justify ;color:navy;">social media</h4>
+            <a href="https://www.tiktok.com/maltilara/"><img src="/assets/image/tiktok.png" alt="TikTok" style="width:32px;margin-left:20px;"></a>
+            <a href="https://www.instagram.com/maltilara/"><img src="/assets/image/m27.png" alt="Instagram" style="width:32px;margin-left:20px;"></a>
+        </nav>
+
+        <!-- Top menu on small screens -->
+        <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+            <span class="w3-left w3-padding">SOME NAME</span>
+            <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+        </header>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- About section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+            <h4><b>About Me</b></h4>
+            <img src="/assets/image/logo77.gif" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>The MaltiLara</h4>
+                <p>A beautiful Abaya store offers an elegant selection
+                    of traditional yet modern abayas that cater to every woman's style.
+                    The store features a variety of designs, from classic black to vibrant,
+                    embroidered pieces, all crafted with high-quality fabrics.
+                    With attention to detail and a focus on modest fashion,
+                    this store is the ultimate destination for those seeking timeless and chic abayas.
+                </p>
+                <p>mail: Maltilara@outlook.com</p>
+                <p>tel: +973-66838344</p>
+                <hr class="w3-opacity">
+                <h4 class="w3-padding-16">My main Account</h4>
+            </div>
+        </div>
+
+        <h2 style="text-align:center">My Profile Card</h2>
+        <div class="card">
+            <img src="/assets/img/Logoo.jpeg" alt="MaltiLara" style="width:100%">
+            <h1>MaltiLara</h1>
+            <p class="title">Owner & Founder, Bloger,  Fashion Designer</p>
+            <p>MaltiLara AbayaShop</p>
+            <div style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-instagram"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>  
+                <a href="#"><i class="fa fa-tiktok"></i></a>  
+                <a href="#"><i class="fa fa-facebook"></i></a> 
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+
+        <iframe width="560" height="315" style="margin-left: 400px;" src="https://www.youtube.com/embed/OXC9M3mrdmM?si=j4A3f225VrIaQAW_&amp;clip=Ugkx8qjCFsYUWEKRVtZRsJMNaHw-9Vb_-L6x&amp;clipt=EL_hBxietgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay></iframe>
+
+        <div class="w3-main" style="margin-left:300px" id="galary">
+            <div class="w3-hide-large" style="margin-top:83px"></div>
+            <div class="w3-row">
+                <div class="w3-third">
+                    <img src="/assets/image/m12.jpg" style="width:100%" onclick="onClick(this)" alt="Abaya1">
+                    <div class="comment-section">
+                        <input type="text" class="comment-input" placeholder="Add a comment">
+                        <button onclick="submitComment(this)">Submit</button>
+                        <button onclick="editComment(this)">Edit</button>
+                        <button onclick="deleteComment(this)">Delete</button>
+                    </div>
+                    <img src="/assets/image/m8.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+                    <div class="comment-section">
+                        <input type="text" class="comment-input" placeholder="Add a comment">
+                        <button onclick="submitComment(this)">Submit</button>
+                        <button onclick="editComment(this)">Edit</button>
+                        <button onclick="deleteComment(this)">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-display-topright w3-xlarge w3-red">×</span>
+            <div class="w3-modal-content w3-animate-zoom">
+                <img id="img01" style="width:100%">
+                <div id="caption" style="margin:24px;color:#ffffff; text-align:center;"></div>
+            </div>
+        </div>
+
+        <script>
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("caption").innerHTML = element.alt;
+                document.getElementById("modal01").style.display = "block";
+            }
+
+            function submitComment(button) {
+                const input = button.previousElementSibling; // Get the input field
+                if (input.value.trim() !== "") {
+                    alert("Comment submitted: " + input.value);
+                    input.value = ""; // Clear the input field
+                } else {
+                    alert("Please enter a comment before submitting.");
+                }
+            }
+
+            function editComment(button) {
+                const input = button.previousElementSibling.previousElementSibling; // Get the input field
+                const currentComment = input.value;
+                const newComment = prompt("Edit your comment:", currentComment);
+                if (newComment !== null) {
+                    input.value = newComment; // Update the input field with new comment
+                }
+            }
+
+            function deleteComment(button) {
+                const input = button.previousElementSibling.previousElementSibling; // Get the input field
+                input.value = ""; // Clear the input field
+                alert("Comment deleted.");
+            }
+        </script>
+    </body>
+</html>
